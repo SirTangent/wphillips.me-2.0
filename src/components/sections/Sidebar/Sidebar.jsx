@@ -50,7 +50,7 @@ const Sidebar = () => {
           Engineer, Programmer, & Maker
         </p>
         <a
-          href="#"
+          href="/#"
           className="inline-block mb-3 rounded bg-purple-600 text-center border-0 py-2 px-6 text-white leading-7 tracking-wide hover:bg-purple-800"
           download="Resume"
         >
@@ -100,6 +100,7 @@ const SocialIcon = (props) => {
       <a
         href={link}
         target="_blank"
+        rel="noreferrer"
         className={
           "w-8 h-8 bg-purple-100 rounded text-purple-800 flex items-center justify-center hover:text-white hover:bg-purple-600"
         }
