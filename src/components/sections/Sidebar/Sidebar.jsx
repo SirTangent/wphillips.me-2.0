@@ -51,6 +51,7 @@ const Sidebar = () => {
         <p className="text-sm text-gray-400 mb-3">
           Engineer, Programmer, & Maker
         </p>
+        {/*  TODO: Make resume link as new tab*/}
         <a
           href={resumeURL}
           target="_blank"
