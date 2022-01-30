@@ -1,64 +1,48 @@
 import React from "react";
 import {
-  FaBehance,
-  FaDribbble,
   FaFacebookF,
   FaGithub,
-  FaInstagram,
   FaLinkedinIn,
-  FaSkype,
-  FaTwitter,
+  FaDev,
+  FaKeybase
 } from "react-icons/fa";
 import profile from "../../../images/profile.jpg";
 
 const socials = [
   {
+    id: 0,
+    icon: <FaGithub />,
+    link: "https://github.com/SirTangent",
+  },
+  {
     id: 1,
-    icon: <FaFacebookF />,
-    link: "#0",
+    icon: <FaLinkedinIn />,
+    link: "https://www.linkedin.com/in/phillipsw1/",
   },
   {
     id: 2,
-    icon: <FaGithub />,
-    link: "#0",
+    icon: <FaFacebookF />,
+    link: "https://www.facebook.com/SirTangent",
   },
   {
     id: 3,
-    icon: <FaLinkedinIn />,
-    link: "#0",
+    icon: <FaDev />,
+    link: "https://devpost.com/SirTangent",
   },
   {
     id: 4,
-    icon: <FaInstagram />,
-    link: "#0",
-  },
-  {
-    id: 5,
-    icon: <FaBehance />,
-    link: "#0",
-  },
-  {
-    id: 6,
-    icon: <FaDribbble />,
-    link: "#0",
-  },
-  {
-    id: 7,
-    icon: <FaSkype />,
-    link: "#0",
-  },
-  {
-    id: 7,
-    icon: <FaTwitter />,
-    link: "#0",
-  },
+    icon: <FaKeybase />,
+    link: "#",
+    disabled: true,
+    tip: "Keybase account is being reset..."
+  }
 ];
 
 const Sidebar = () => {
   return (
     <aside className="sticky top-0 bg-white md:mx-8 lg:mx-4 mb-8 p-6 shadow-md rounded-md -mt-40">
       <div className="w-24 h-24 rounded-md overflow-hidden mx-auto mb-5">
-        <img src={profile} alt="shafiqhammad" className="w-full" />
+        <img src={profile} alt="headshot" className="w-full" />
       </div>
       <div className="text-center">
         <h1 className="text-xl text-gray-800 font-bold mb-1">Wyatt Phillips</h1>
@@ -66,7 +50,7 @@ const Sidebar = () => {
           Engineer, Programmer, & Maker
         </p>
         <a
-          href="#0"
+          href="#"
           className="inline-block mb-3 rounded bg-purple-600 text-center border-0 py-2 px-6 text-white leading-7 tracking-wide hover:bg-purple-800"
           download="Resume"
         >
@@ -96,12 +80,29 @@ const Sidebar = () => {
 export default Sidebar;
 
 const SocialIcon = (props) => {
-  const { icon, link } = props.social;
+  const { icon, link, disabled, tip } = props.social;
+  if (disabled) {
+    return(
+        <li className="m-2">
+          <div
+              className={
+                "w-8 h-8 bg-gray-200 rounded text-gray-400 flex items-center justify-center"
+              }
+              title={tip}
+          >
+            {icon}
+          </div>
+        </li>
+    );
+  }
   return (
     <li className="m-2">
       <a
         href={link}
-        className="w-8 h-8 bg-purple-100 rounded text-purple-800 flex items-center justify-center hover:text-white hover:bg-purple-600"
+        target="_blank"
+        className={
+          "w-8 h-8 bg-purple-100 rounded text-purple-800 flex items-center justify-center hover:text-white hover:bg-purple-600"
+        }
       >
         {icon}
       </a>
