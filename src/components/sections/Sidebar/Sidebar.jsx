@@ -8,6 +8,8 @@ import {
 } from "react-icons/fa";
 import profile from "../../../images/profile.jpg";
 
+const resumeURL = "https://128development-my.sharepoint.com/:b:/g/personal/wphillips_128_dev/Ed8MmqUI1V9GheirLlwhkfMBmLaCPQGhctlrB3P0DyLg6w?e=BHy3dM"
+
 const socials = [
   {
     id: 0,
@@ -50,7 +52,9 @@ const Sidebar = () => {
           Engineer, Programmer, & Maker
         </p>
         <a
-          href="/#"
+          href={resumeURL}
+          target="_blank"
+          rel="noreferrer"
           className="inline-block mb-3 rounded bg-purple-600 text-center border-0 py-2 px-6 text-white leading-7 tracking-wide hover:bg-purple-800"
           download="Resume"
         >
