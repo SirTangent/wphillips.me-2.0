@@ -10,6 +10,7 @@ import Blog from "../../pages/Blog/Blog";
 import Contact from "../../pages/Contact/Contact";
 import Portfolio from "../../pages/Portfolio/Portfolio";
 import Service from "../../pages/Service/Service";
+import Redirects from "../../Redirects";
 
 const navbarData = [
   {
@@ -69,6 +70,7 @@ const Navbar = () => {
         <Route path="/about">
           <About />
         </Route>
+        <Redirects />
       </Switch>
     </Router>
   );
