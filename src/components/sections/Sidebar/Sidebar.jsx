@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import profile from "../../../images/profile.jpg";
 
-const resumeURL = "https://128development-my.sharepoint.com/:b:/g/personal/wphillips_128_dev/Ed8MmqUI1V9GheirLlwhkfMBmLaCPQGhctlrB3P0DyLg6w?e=BHy3dM"
+const resumeURL = "/resume"
 
 const socials = [
   {
