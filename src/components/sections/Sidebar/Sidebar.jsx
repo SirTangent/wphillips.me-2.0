@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import profile from "../../../images/profile.jpg";
 
-const resumeURL = "/resume"
+const resumeURL = "/media/PhillipsWyatt-Resume.pdf"
 
 const socials = [
   {
@@ -55,10 +55,7 @@ const Sidebar = () => {
                   {/*  TODO: Make resume link as new tab*/}
                   <a
                       href={resumeURL}
-                      target="_blank"
-                      rel="noreferrer"
                       className="inline-block mb-3 rounded bg-purple-600 text-center border-0 py-2 px-6 text-white leading-7 tracking-wide hover:bg-purple-800"
-                      download="Resume"
                   >
                       View Resume
                   </a>
