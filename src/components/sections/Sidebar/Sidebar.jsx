@@ -70,9 +70,6 @@ const Sidebar = () => {
                       <span>😊</span> About Me
                   </h3>
                   <div className="text-gray-400 text font-light leading-relaxed">
-                      <p className="pb-2 italic">
-                          "Attempting to unlock the mysteries of the universe with code, caffeine, and a dream."
-                      </p>
                       <p>
                           I'm a recent engineering graduate from <a href="https://wit.edu/" className="underline"> Wentworth Institute of Technology</a> who finds everyday passion with building things from electronics to web applications.
                       </p>
