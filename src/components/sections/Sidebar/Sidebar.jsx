@@ -34,9 +34,7 @@ const socials = [
   {
     id: 4,
     icon: <FaKeybase />,
-    link: "#",
-    disabled: true,
-    tip: "Keybase account is being reset..."
+    link: "https://keybase.io/sirtangent"
   }
 ];
 
